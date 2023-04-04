@@ -10,11 +10,15 @@ The layout is simple where it makes it easy for users to see everything
 
 FEATURES 
 ========
+
 * Django allows us to create a full functioning website 
 * Postgres was used for static files 
 * Allauth was used for Autentication 
 * stripe was used for the payment system. 
 * Website is design using mobile-first approach.
+* SEO for good search optimisation 
+* Sort by function 
+* add to cart function 
 
 
 
@@ -30,3 +34,7 @@ The following languages, frameworks, libraries, and tools were used to construct
 * Heroku
 * stripe 
 * Postgres 
+
+Reference 
+=============
+- <https://wallpapersafari.com/w/qBP3Q1> Pokemon background
