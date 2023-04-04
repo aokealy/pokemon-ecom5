@@ -5,7 +5,7 @@ html {
 body {
     background: url('/media/background.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(90vh - 150px);
     color: red;
     font-family: 'Poppins';
 }
@@ -15,9 +15,11 @@ body {
     align-items: center;
     display: inline-flex;
     justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.4rem;
+    width: 1.4rem;
 }
+
+
 
 .logo-font {
     text-transform: uppercase;
@@ -53,7 +55,7 @@ body {
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 3px solid black !important;
 }
 
 /* -------------------------------- Media Queries */
