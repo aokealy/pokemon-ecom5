@@ -2,6 +2,7 @@ html {
     height: 100%;
 }
 
+
 body {
     background: url('/media/background.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -21,7 +22,6 @@ body {
 }
 
 
-
 .logo-font {
     text-transform: uppercase;
 }
@@ -31,13 +31,13 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: red;
     color: white;
     min-width: 260px;
 }
 
 .btn-black {
-    background: black;
+    background: red;
     color: white;
 }
 
@@ -47,12 +47,14 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: red;
     color: white;
 }
 
+
+
 .text-black {
-    color: #000 !important;
+    color: red !important;
 }
 
 .border-black {
