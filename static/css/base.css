@@ -40,6 +40,15 @@ body {
     background: red;
     color: white;
 }
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #f6e652;
+	z-index: -1;
+}
 
 .shop-now-button:hover,
 .shop-now-button:active,
