@@ -12,7 +12,7 @@ body {
   
 }
 
-/* from Bulma */
+
 .icon {
     align-items: center;
     display: inline-flex;
@@ -33,7 +33,7 @@ body {
 .shop-now-button {
     background: red;
     color: white;
-    min-width: 260px;
+    min-width: 300px;
 }
 
 .btn-black {
