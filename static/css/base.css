@@ -34,7 +34,9 @@ body {
     background: red;
     color: white;
     min-width: 300px;
+
 }
+
 
 
 .btn-black {
@@ -51,7 +53,9 @@ body {
 	z-index: -1;
 }
 
-.shop-now-button:hover,
+.shop-now-button:hover {
+background-color: yellow;
+}
 .shop-now-button:active,
 .shop-now-button:focus,
 .btn-black:hover,
