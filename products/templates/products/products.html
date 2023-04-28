@@ -13,9 +13,9 @@
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="logo-font">Items Available</h2>
-                <hr class="w-50 mb-1">
+            <div class="col text-left  mt-3">
+                <h2 class="logo-font">Items Available:</h2>
+                <hr class="w-100 mb-1">
             </div>
         </div>
         <div class="row">
@@ -25,7 +25,7 @@
                     {% for product in products %}
                     <!--show the images and make transparent background to match theme-->
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-rounded p-3 mb-2 bg-transparent">
+                            <div class="card h-100 border-rounded p-3 mb-1 bg-transparent">
                                 {% if product.image %}
                                 <a href="">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -44,9 +44,9 @@
                                         <div class="col">
                                             <p class="lead mb-0 text-left font-weight-bold">${{ product.amount }}</p>
                                             {% if product.grade %}
-                                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.grade }} / 10</small>
+                                                <small class="text-muted"><i class="fa-solid fa-bolt mr-1"></i>{{ product.grade }} / 10</small>
                                             {% else %}
-                                                <small class="text-muted">No Grade</small>
+                                                <small class="text-muted">No Grade Available</small>
                                             {% endif %}
                                         </div>
                                     </div>
