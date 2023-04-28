@@ -30,11 +30,12 @@ body {
     width: fit-content;
 }
 
-.shop-now-button {
+.shop-now-button  {
     background: red;
     color: white;
     min-width: 300px;
 }
+
 
 .btn-black {
     background: red;
