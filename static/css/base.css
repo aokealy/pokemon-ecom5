@@ -71,16 +71,16 @@ body {
     border: 3px solid black !important;
 }
 
-/* -------------------------------- Media Queries */
+/* Media Queries */
 
-/* Slightly larger container on xl screens */
+/* xl screens */
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
   }
 }
 
-/* fixed top navbar only on medium and up */
+/* medium navbar */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
