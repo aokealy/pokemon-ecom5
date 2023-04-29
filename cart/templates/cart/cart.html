@@ -14,9 +14,9 @@
   <div class="container mb-2"></div>  
   <div class="row">
     <div class="col">
-        <hr class = "w-50 p-3">
+        <hr class = "w-100 p-3">
         <h2 class="logo-font mb-4 text-center">Cart:</h2>
-        <hr class = "w-50 p-3">
+        <hr class = "w-100 p-3">
     </div>
   </div>
   <div class="row">
@@ -34,6 +34,7 @@
                         <th scope="col">Total Amount:</th>
                     </tr>
                 </thead>
+                <!--Items in cart-->
                 
                 {% for item in cart_items %}
                 <tr>
@@ -57,10 +58,11 @@
                 </tr>
                 
             {% endfor %}
+            <!--Checkout total-->
             <hr>
             <tr>
                 
-                <td colspan="5" class="pt-5 text-center md-4  border  rounded bg-white ">
+                <td colspan="5" class="pt-5 pr-5 text-right md-4  border  rounded bg-white">
                     
                     <h6><strong>Cart Total: ${{ total|floatformat:2 }}</strong></h6>
                     <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
@@ -73,7 +75,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="5" class="text-center"><hr>
+                <td colspan="5" class="text-right pr-5"><hr>
                     
                     <a href="" class="btn btn-black rounded btn-lg">
                         <span class="text-uppercase">Checkout</span>
@@ -89,12 +91,7 @@
         </div>
     {% else %}
         <p class="lead mb-5 text-center">Your cart is currently empty!</p>
-        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-5 btn-md bg-white ">
-            <span class="icon">
-                <i class="fa-solid fa-arrow-left"></i>
-            </span>
-            
-        </a>
+        
     {% endif %}
     </div>
   </div>
