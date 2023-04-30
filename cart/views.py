@@ -21,7 +21,7 @@ def add_to_cart(request, item_id):
     return redirect(redirect_url)
 
 def adjust_cart(request, item_id):
-    """Adjust the quantity of the specified product to the specified amount"""
+    
 
     quantity = int(request.POST.get('quantity'))
     size = None
