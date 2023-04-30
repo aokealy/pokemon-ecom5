@@ -19,6 +19,7 @@ class Product(models.Model):
     sku = models.CharField(max_length=200, null=True, blank=True)
     name = models.CharField(max_length=200)
     description = models.TextField()
+    has_grades = models.BooleanField(default=False, null=True, blank=True)
     amount = models.DecimalField(max_digits=8, decimal_places=2)
     grade = models.DecimalField(max_digits=4, decimal_places=2, null=True, blank=True)
     image_url = models.URLField(max_length=1000, null=True, blank=True)
