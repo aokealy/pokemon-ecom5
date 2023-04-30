@@ -90,6 +90,11 @@ footer {
 .border-black {
     border: 3px solid black !important;
 }
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
 
 /* Media Queries */
 
