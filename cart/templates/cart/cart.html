@@ -39,6 +39,7 @@
                 {% for item in cart_items %}
                 <tr>
                     <td class="p-3 w-25 ">
+                        
                         <img class="img-fluid rounded" src="{{ item.product.image.url }}">
                     </td>
                     <td class="py-3">
@@ -55,13 +56,13 @@
                         <p class="my-0 text-black">${{ item.product.amount }}</p>
                     </td>
                 </tr>
-                
+                <br>
             {% endfor %}
             <!--Checkout total-->
-            <hr>
+            
             <tr>
                 
-                <td colspan="5" class="pt-5 pr-5 text-right md-4  border  rounded bg-white">
+                <br><td colspan="5" class="pt-5 pr-5 text-right md-4   rounded ">
                     
                     <h6><strong>Cart Total: ${{ total|floatformat:2 }}</strong></h6>
                     <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
@@ -73,6 +74,7 @@
                     {% endif %}
                 </td>
             </tr>
+            
             <tr>
                 <td colspan="5" class="text-right pr-5"><hr>
                     
@@ -84,7 +86,9 @@
                     </a>
                 </td>
             </tr>
+            
         </table>
+        
     </div>
 
         </div>
