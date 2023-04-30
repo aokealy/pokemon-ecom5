@@ -29,7 +29,7 @@
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5 ">
                     <p class="mb-0"><h1>{{ product.name }}</h1></p>
-                    <p class="lead mb-0 text-left font-weight-bold"><h2?>${{ product.amount }}</h2?</p>
+                    <p class="lead mb-0 text-left font-weight-bold"><h3>${{ product.amount }}</h3></p>
                     {% if product.grade %}
                         <small class="text-muted"><i class="fa-solid fa-bolt mr-4"></i><h2>{{ product.grade }} / 10</h2></small>
                     {% else %}
@@ -42,39 +42,44 @@
                             <div class="col-12">
                                 <p class="mt-3"><strong>Amount:</strong></p>
                                 <div class="form-group w-25">
-                                    <div class="input-group-prepend">
-                                        <button class="decrement-qty btn btn-black rounded-0" 
+                                      <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button class="decrement-qty btn btn-black rounded-0" 
                                                 data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
                                                 <span class="icon">
-                                                    <i class="fa-solid fa-square-minus"></i>
+                                                    <i class="fas fa-minus"></i>
                                                 </span>
                                             </button>
                                         </div>
-                                    <div class="input-group">
-                                        <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" max="50" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                        <input class="form-control qty_input" type="number"
+                                            name="quantity" value="1" min="1" max="50"
+                                            data-item_id="{{ product.id }}"
+                                            id="id_qty_{{ product.id }}">
                                         <div class="input-group-append">
                                             <button class="increment-qty btn btn-black rounded-0"
-                                            data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
-                                            <span class="icon">
-                                                <i class="fa-solid fa-square-plus"></i>
-                                            </span>
-                                        </button>
-
+                                                data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                                <span class="icon">
+                                                    <i class="fas fa-plus"></i>
+                                                </span>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div class="col-12">
-                                
-                                <input type="submit" class="btn btn-black rounded text-uppercase mt-4 w-50 h-75" value="Add To Cart">
+                                </a>
+                                <input type="submit" class="btn btn-black rounded text-uppercase mt-5" value="Add to Cart">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                           
                         </div>
                     </form>
-                    
                 </div>
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'products/includes/quantity_input_scripts.html' %}
 {% endblock %}
