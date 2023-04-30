@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
-{% load cart_tools %}
+
+
 
 
 {% block page_header %}
@@ -88,7 +89,7 @@
                     <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
                     </td>
                     <td class="py-3">
-                        <p class="my-0 text-black">${{ item.product.amount | calc_subtotal:item.quantity  }}
+                        <p class="my-0 text-black">${{ item.product.amount  }}
                             <hr>
                         </p>
                     </td>
