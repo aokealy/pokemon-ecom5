@@ -66,14 +66,3 @@ def remove_from_cart(request, item_id):
      return HttpResponse(status=200)
     except Exception as e:
       return HttpResponse(status=200)
-
-
-
-
-
-
-
-
-    
-    
-   
