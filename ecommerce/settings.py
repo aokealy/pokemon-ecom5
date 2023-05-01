@@ -84,7 +84,7 @@ TEMPLATES = [
                 'cart.contexts.cart_contents',
                 
             ],
-             'builtins': [
+            'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
                 'crispy_forms.templatetags.crispy_forms_field',
             ]
@@ -172,10 +172,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # Stripe
-FREE_DELIVERY_THRESHOLD = 200
+FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
-STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51MzNKpBmLoLbFeg9C5XhIR5FiviBvmdyoqYvifZlkC8uOHZjd4VLyTpnT1hJsIm42lljHpYW30TXopgfLWnpsJoI00FyTPDbR8')
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 
 
