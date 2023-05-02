@@ -42,3 +42,28 @@ Reference
 - <https://d16hw7tbcsk68f.cloudfront.net/s3/cgccards-production/research/subcategories/pok_pop-series.png> Espeon Gold Star Graded
 - <https://d16hw7tbcsk68f.cloudfront.net/s3/cgccards-production/research/subcategories/pok_e-series-v2.png> Celebi Graded
 - <https://d16hw7tbcsk68f.cloudfront.net/s3/cgccards-production/research/subcategories/pok_promotional-v2.png> Pikachu and Ash graded
+
+Heroku Error
+=============
+I could not deploy this project as when trying to log into Heroku through CLI it gave me a IP address mismatch.
+<img src="media/ip.PNG">
+
+Heroku Error
+=============
+This also caused my dashboard not to load! I think with the 2FA autentication the CLI does not work as much causing to create problems
+<img src="media/heroku.PNG">
+
+Front Page
+=============
+The front Page of my website
+<img src="media/frontpage.PNG">
+
+Products
+=============
+The products of my website
+<img src="media/products.PNG">
+
+Profile
+=============
+The products of my website
+<img src="media/profile.PNG">
